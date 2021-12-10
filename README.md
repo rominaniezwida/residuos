@@ -1,0 +1,2 @@
+# residuos
+localización residuos
