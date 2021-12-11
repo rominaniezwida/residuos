@@ -1,0 +1,103 @@
+---
+title: "Clase FL"
+author: "Ignacio Nicolao"
+date: "2/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=TRUE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+Todos los archivos que manejen debería tenerlos guardados en la siguiente carpeta:
+```{r}
+getwd()
+```
+
+## Cómo incrustar un gráfico
+
+![Figura 1 Clase del 2 de diciembre](img/Triangulo.PNG)
+
+## Cómo asignar valor a una variable
+
+```{r}
+altura <- 1.68
+peso <- 78
+```
+
+Cálculo del indice de masa corporal
+
+```{r}
+imc <- peso/(altura)^2
+imc
+```
+## Crear variables de tipo alfabético
+
+```{r}
+personas <- list("Juan","Pedro","Maria","30","años")
+```
+
+## Cómo extraer datos de una lista
+
+```{r}
+personas[2]
+```
+## Cómo extraer más de un dato de una lista
+```{r}
+personas[2:5]
+```
+```{r}
+personas[-(2:4)]
+```
+## Ejercicio resuelto
+
+**4.1.5 Ejercicio**
+Sean Los puntos:
+
+
+$$A (−32.92713427858885,−68.81772766801757)$$
+$$B (−32.86788086975811,−68.85428072392608)$$
+**Determinar:**
+
+- La Distancia Euclídea
+- La Distancia Manhatam
+- Representación geomática
+- ¿Que ruta elegirías para llegar desde A hasta B?
+
+**Solución:**
+
+Distancia Euclídea
+
+$$ D=\sqrt{(a^2+b^2)} $$
+donde: 
+$$ a^2 = (x_2 - x_1 )^2$$
+$$ b^2 = (y_2 - y_1 )^2$$
+También nos podemos robar la ecuación de Wikipedia
+
+Two dimensions
+In the Euclidean plane, let point $p$ have Cartesian coordinates {\displaystyle (p_{1},p_{2})}(p_{1},p_{2}) and let point {\displaystyle q}q have coordinates {\displaystyle (q_{1},q_{2})}(q_{1},q_{2}). Then the distance between {\displaystyle p}p and {\displaystyle q}q is given by:[2]
+
+$${\displaystyle d(p,q)={\sqrt {(q_{1}-p_{1})^{2}+(q_{2}-p_{2})^{2}}}}$$
+This can be seen by applying the Pythagorean theorem to a right triangle with horizontal and vertical sides, having the line segment from {\displaystyle p}p to {\displaystyle q}q as its hypotenuse. The two squared formulas inside the square root give the areas of squares on the horizontal and vertical sides, and the outer square root converts the area of the square on the hypotenuse into the length of the hypotenuse.[3]
+It is also possible to compute the distance for points given by polar coordinates. If the polar coordinates of {\displaystyle p}p are {\displaystyle (r,\theta )}(r,\theta ) and the polar coordinates of {\displaystyle q}q are {\displaystyle (s,\psi )}{\displaystyle (s,\psi )}, then their distance is[2] given by the law of cosines:
+
